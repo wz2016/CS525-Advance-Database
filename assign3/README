@@ -1,0 +1,63 @@
+2015 Fall CS525 Programming Assignment 3 - Storage Manager
+Due Date: 11/04/2015
+
+Group Member:
+WeiLun Zhao | A20329942 | wzhao32@hawk.iit.edu
+Su Feng | A20338748 | sfeng14@hawk.iit.edu
+Yuchen Tang | A20352138 | ytang34@hawk.iit.edu
+
+Description:
+In the assignment 3, the record manager is created and implemented. The record manger handles tables by using tableList structure and allow clients to insert, delete, update and scan records. All the methods included in the record_mgr.c and pass all the testes in the test_assign3_1.c. In addition, out team implement an user interactive interface; the code stored in the ui.c.
+Extra credit Acomplished:
+1.tombstones
+2.Interactive interface
+(For the interractive interface, incorrect input is not handled)
+
+File Include: 
+README			
+Makefile		-Building code
+buffer_mgr.h		-Not Modified
+buffer_mgr.c		-As assign2
+buffer_mgr_stat.c	-Not Modified
+buffer_mgr_stat.h	-Not Modified
+dberror.c		-Not Modified
+dberror.h		-Not Modified
+dt.h			-Not Modified
+expr.c			-Not Modified
+expr.h			-Not Modified
+record_mgr.h		-Not Modified
+record_mgr.c		-To implement record manager methods
+rm_serializer.c		-Not Modified
+storage_mgr.h		-Not Modified
+storage_mgr.c		-As assign2
+tables.h		-Not Modified
+test_assign3_1.c	-Not Modified
+test_expr.c		-Not Modified
+test_helper.h		-Not Modified
+ui.c			-Implement UI
+
+How to compile and test:
+1. Open terminal and go to the assign3 folder
+2. type in: make (compile files)
+3. type in: ./record_mgr (to test)
+4. type in: make ./ui (to compile the UI)
+5. type in: ./ui (to run the UI)
+
+
+Design Idea:
+
+Makefile:
+Our Makefile shows dependencies among all files. If any file is modified, just run "make" again, changes will be updated.
+"make clean" helps us remove unwanted files thus we can commit and push only source files to repository.
+“make ./ui”  compiles ui
+
+record_mgr.c:
+part1: table and manager
+
+part2: handling records in a table
+
+part3: scans
+
+part4: dealing with schemas
+
+part5: dealing with records and attribute values
